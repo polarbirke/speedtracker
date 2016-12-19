@@ -3,13 +3,13 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "My website"
+name: "Sehr saftiger Obst - Streuselkucken [~10 Bilder, !Video, !SfS], mobile 3G"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
 # SpeedTracker site.
-# 
-default: true
+#
+default: false
 
 #
 # If you want tests to be repeated automatically, you can an interval (in hours)
@@ -22,10 +22,14 @@ interval: 12
 # WebPageTest test parameters
 #
 parameters:
-  connectivity: "Cable"
-  location: "Dulles:Chrome"
-  runs: 1
-  url: "https://my-website.com"
+  connectivity: "3G"
+  mobile: 1
+  mobileDevice: "iPhone6"
+  location: "ec2-eu-central-1:Chrome"
+  runs: 3
+  timeline: true
+  url: "http://www.chefkoch.de/rezepte/1896251308983836/Sehr-saftiger-Obst-Streuselkucken.html"
+  video: true
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value
